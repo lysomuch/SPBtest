@@ -1,149 +1,144 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Smart button</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="/javascripts/jquery-1.9.1.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Smart button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=sb">
+    </script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="/javascripts/jquery-1.9.1.js"></script>
+  </head>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">Ben's Test btn</div>
-      </div>
-    </div>
-  </header>
-  <div class="signup-modal-wrapper" id="signup-modal">
-    <div class="modal">
-      <div class="close-modal">
-        <i class="fa fa-2x fa-times"></i>
-      </div>
-      <div id="signup-form">
-        <h2>Emailで新規登録</h2>
-        <form action="#">
-          <input class="form-control" type="text" placeholder="メールアドレス">
-          <input class="form-control" type="password" placeholder="パスワード">
-          <div id="submit-btn">新規登録</div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="login-modal-wrapper" id="login-modal">
-    <div class="modal">
-      <div class="close-modal">
-        <i class="fa fa-2x fa-times"></i>
-      </div>
-      <div id="login-form">
-        <h2>Emailログイン</h2>
-        <form action="#">
-          <input class="form-control" type="text" placeholder="メールアドレス">
-          <input class="form-control" type="password" placeholder="パスワード">
-          <div id="submit-btn">ログイン</div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングをしょう。
-      </p>
-      <div class="btn signup signup-show">新規登録はこちら</div>
-      <p>or</p>
-      <div class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</div>
-      <div class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson lesson-hover">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">Ben's Test btn</div>
         </div>
-        <div class="lesson lesson-hover">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+      </div>
+    </header>
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
         </div>
-        <div class="lesson lesson-hover">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson lesson-hover">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">新規登録</div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-  <div class="faq-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>FAQ</h2>
+    <div class="top-wrapper">
+      <div class="container">
+        <div class="btn signup signup-show">新規登録はこちら</div>
       </div>
-      <div class="faq">
-        <ul id="faq-list">
-          <li class="faq-list-item">
-            <h3 class="question">Progateの公式キャラクターはなんですか？</h3>
-            <span>+</span>
-            <div class="answer">
-              <p>にんじゃわんこといいます。忍者の格好をしたわんこです。ネコではありません。</p>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="lessons">
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+                <div id="SPB1"></div>
             </div>
-          </li>
-          <li class="faq-list-item">
-            <h3 class="question">にんじゃわんこはオスですか？それともメスですか？</h3>
-            <span>+</span>
-            <div class="answer">
-              <p>にんじゃわんこはオスです。</p>
+            <p class="text-contents">单纯的integration，没有加任何东西</p>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
             </div>
-          </li>
-          <li class="faq-list-item">
-            <h3 class="question">にんじゃわんこは何歳ですか？</h3>
-            <span>+</span>
-            <div class="answer">
-              <p>にんじゃわんこは14歳です。</p>
+            <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
             </div>
-          </li>
-        </ul>
+            <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+              
+            </div>
+            <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3 id="tagline">Let's learn to code, learn to be creative!</h3>
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <ul id="faq-list">
+            <li class="faq-list-item">
+              <h3 class="question">Progateの公式キャラクターはなんですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこといいます。忍者の格好をしたわんこです。ネコではありません。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">にんじゃわんこはオスですか？それともメスですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこはオスです。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">にんじゃわんこは何歳ですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこは14歳です。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="btn message signup-show">さっそく開発する</div>
     </div>
-  </div>
-  <div id="back-to-top" style="position:fixed;right:20px;bottom:10px"><a href="#"><img src="image/back-to.png"></a></div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code,Learn to be Creative.</p>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+          <h3 id="tagline">Let's learn to code, learn to be creative!</h3>
+        </div>
+        <div class="btn message signup-show">さっそく開発する</div>
+      </div>
     </div>
-  </footer>
+    <div id="back-to-top" style="position:fixed;right:20px;bottom:10px"><a href="#">up</a></div>
+    <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+        <p>Learn to Code,Learn to be Creative.</p>
+      </div>
+    </footer>
 
-  <script src="javascripts/script.js"></script>
-</body>
+    <script src="javascripts/script.js"></script>
+    <script>
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '0.01'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          // Capture the funds from the transaction
+          return actions.order.capture().then(function(details) {
+            // Show a success message to your buyer
+            alert('Transaction completed by ' + details.payer.name.given_name);
+          });
+        }
+      }).render('#SPB1');
+      </script>
+  </body>
 
 </html>

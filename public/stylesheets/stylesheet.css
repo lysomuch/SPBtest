@@ -54,9 +54,7 @@ header .container{
 /*************header*************/
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
-  background-size: cover;
+  padding: 100px;
   color: white;
   text-align: center;
 }
@@ -83,15 +81,6 @@ header .container{
   background-color: #239b76;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
 .btn {
   padding: 8px 24px;
   color: white;
@@ -115,7 +104,7 @@ header .container{
 }
 
 /*モーダル*/
-.login-modal-wrapper, .signup-modal-wrapper {
+.signup-modal-wrapper {
   display: none;
   position: fixed;
   top: 0;
@@ -273,9 +262,6 @@ header .container{
   text-align: center;
 }
 
-.message-wrapper .heading h3 {
-  font-weight: normal;
-}
 
 .message {
   padding: 15px 40px;
